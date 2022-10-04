@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Application", "1 - Application", "{A3375D0C-3430-483C-9DC8-40241F220720}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Domain", "2 - Domain", "{91D442BE-1FFE-48E6-8173-0C4B96196B65}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Infra", "3 - Infra", "{33FBEA5C-E715-469B-8ABF-352C80D409EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommunicationSolutions", "CommunicationSolutions\CommunicationSolutions.csproj", "{CBF35D07-803D-4A7E-8649-CFC450A8143D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CBF35D07-803D-4A7E-8649-CFC450A8143D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBF35D07-803D-4A7E-8649-CFC450A8143D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBF35D07-803D-4A7E-8649-CFC450A8143D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBF35D07-803D-4A7E-8649-CFC450A8143D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CBF35D07-803D-4A7E-8649-CFC450A8143D} = {A3375D0C-3430-483C-9DC8-40241F220720}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {942AC518-CC24-4546-A1C5-7380B6A81368}
+	EndGlobalSection
+EndGlobal
