@@ -4,7 +4,8 @@ using System.Text;
 
 namespace CommunicationSolutions.Domain.Model.Request
 {
-    internal class TWWebHookRequest
+    public class ClientCallRequest
     {
+        public string MyProperty { get; set; }
     }
 }
