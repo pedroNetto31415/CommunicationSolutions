@@ -5,7 +5,7 @@ using CommunicationSolutions.Domain.Interface.Service;
 namespace CommunicationSolutions.Controllers
 {
     [ApiController]
-    [Route("/[controller]")]
+    [Route("[controller]")]
     public class ClientCallController : ControllerBase
     {
         private readonly IVoucherCardService _voucherCardService;
@@ -19,10 +19,10 @@ namespace CommunicationSolutions.Controllers
         {
             var response = _voucherCardService.GetBalance(clientCallRequest);
 
-            if (response.ErrorId == 0)
-                return Ok(response);
-            else
-                return BadRequest(response); 
+            if (response.ErrorId != 0)
+                return BadRequest(response);
+
+            return Ok(response);
         }
     }
 }

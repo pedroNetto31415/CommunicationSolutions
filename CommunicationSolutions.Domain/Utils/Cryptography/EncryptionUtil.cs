@@ -6,9 +6,9 @@ using System.Text;
 
 namespace UdPay.Utils.Cryptography
 {
-    public class EncryptionUtil : IEncryptionUtil
+    public static class EncryptionUtil : IEncryptionUtil
     {
-        public string ComputeSha256Hash(string rawData)
+        public static string ComputeSha256Hash(string rawData)
         {
             // Create a SHA256   
             using (SHA256 sha256Hash = SHA256.Create())
@@ -33,7 +33,7 @@ namespace UdPay.Utils.Cryptography
         /// </summary>
         /// <param name="plainText">String to be encrypted</param>
         /// <param name="password">Password</param>
-        public string Encrypt(string plainText, string password)
+        public static string Encrypt(string plainText, string password)
         {
             if (plainText == null)
             {
@@ -63,7 +63,7 @@ namespace UdPay.Utils.Cryptography
         /// <param name="encryptedText">String to be decrypted</param>
         /// <param name="password">Password used during encryption</param>
         /// <exception cref="FormatException"></exception>
-        public string Decrypt(string encryptedText, string password)
+        public static string Decrypt(string encryptedText, string password)
         {
             if (encryptedText == null)
             {
@@ -86,7 +86,7 @@ namespace UdPay.Utils.Cryptography
             return Encoding.UTF8.GetString(bytesDecrypted);
         }
 
-        private byte[] Encrypt(byte[] bytesToBeEncrypted, byte[] passwordBytes)
+        private static byte[] Encrypt(byte[] bytesToBeEncrypted, byte[] passwordBytes)
         {
             byte[] encryptedBytes = null;
 
@@ -120,7 +120,7 @@ namespace UdPay.Utils.Cryptography
             return encryptedBytes;
         }
 
-        private byte[] Decrypt(byte[] bytesToBeDecrypted, byte[] passwordBytes)
+        private static byte[] Decrypt(byte[] bytesToBeDecrypted, byte[] passwordBytes)
         {
             byte[] decryptedBytes = null;
 
