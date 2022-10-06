@@ -6,6 +6,7 @@ namespace CommunicationSolutions.Domain.Model.Request
 {
     public class ClientCallRequest
     {
-        public string MyProperty { get; set; }
+        public string NationalId { get; set; }
+        public string Password { get; set; }
     }
 }

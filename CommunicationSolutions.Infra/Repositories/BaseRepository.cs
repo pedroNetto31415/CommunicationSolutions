@@ -15,7 +15,7 @@ namespace CommunicationSolutions.Infra.Repositories
 
         private void InitializeDatabase()
         {
-            _connection = new Database.Connection.Database().GetConnection("user_gestao", "BACKDEV");
+            _connection = new Database.Connection.Database().GetConnection("user_gestao", "PAYMENT");
         }
 
         public void OpenIfClosed()

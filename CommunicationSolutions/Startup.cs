@@ -1,4 +1,5 @@
 using CommunicationSolutions.Domain.Interface;
+using CommunicationSolutions.Domain.Service;
 using CommunicationSolutions.Infra.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -12,6 +13,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using UdPay.Utils.Cryptography;
 
 namespace CommunicationSolutions
 {
@@ -27,7 +29,10 @@ namespace CommunicationSolutions
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddScoped<IClientRepository, ClientRepository>();
+            services.AddScoped<IEncryptionUtil, EncryptionUtil>();
+            services.AddScoped<IVoucherCardService, VoucherCardService>(); 
+            services.AddScoped<IVoucherCardRepository, VoucherCardRepository>();
+
             services.AddControllers();
         }
 
