@@ -1,4 +1,4 @@
-﻿using CommunicationSolutions.Domain.Interface;
+﻿using CommunicationSolutions.Domain.Interface.Repository;
 using CommunicationSolutions.Domain.Model.Request;
 using CommunicationSolutions.Domain.Model.Response;
 using Dapper;

@@ -1,4 +1,6 @@
-﻿using CommunicationSolutions.Domain.Interface;
+﻿using CommunicationSolutions.Domain.Interface.Repository;
+using CommunicationSolutions.Domain.Interface.Service;
+using CommunicationSolutions.Domain.Interface.Util;
 using CommunicationSolutions.Domain.Model.Request;
 using CommunicationSolutions.Domain.Model.Response;
 using System;

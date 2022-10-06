@@ -1,4 +1,4 @@
-﻿using CommunicationSolutions.Domain.Interface;
+﻿using CommunicationSolutions.Domain.Interface.Util;
 using System;
 using System.IO;
 using System.Security.Cryptography;

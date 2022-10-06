@@ -1,4 +1,6 @@
-using CommunicationSolutions.Domain.Interface;
+using CommunicationSolutions.Domain.Interface.Repository;
+using CommunicationSolutions.Domain.Interface.Service;
+using CommunicationSolutions.Domain.Interface.Util;
 using CommunicationSolutions.Domain.Service;
 using CommunicationSolutions.Infra.Repositories;
 using Microsoft.AspNetCore.Builder;

@@ -1,6 +1,7 @@
 ﻿using CommunicationSolutions.Domain.Model.Request;
 using Microsoft.AspNetCore.Mvc;
-using CommunicationSolutions.Domain.Interface; 
+using CommunicationSolutions.Domain.Interface.Service;
+
 namespace CommunicationSolutions.Controllers
 {
     [ApiController]
