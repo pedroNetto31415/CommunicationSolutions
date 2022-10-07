@@ -6,9 +6,9 @@ using System.Text;
 
 namespace UdPay.Utils.Cryptography
 {
-    public static class EncryptionUtil : IEncryptionUtil
+    public  class EncryptionUtil : IEncryptionUtil
     {
-        public static string ComputeSha256Hash(string rawData)
+        public string ComputeSha256Hash(string rawData)
         {
             // Create a SHA256   
             using (SHA256 sha256Hash = SHA256.Create())
@@ -33,7 +33,7 @@ namespace UdPay.Utils.Cryptography
         /// </summary>
         /// <param name="plainText">String to be encrypted</param>
         /// <param name="password">Password</param>
-        public static string Encrypt(string plainText, string password)
+        public string Encrypt(string plainText, string password)
         {
             if (plainText == null)
             {

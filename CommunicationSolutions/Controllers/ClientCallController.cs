@@ -10,14 +10,15 @@ namespace CommunicationSolutions.Controllers
     {
         private readonly IVoucherCardService _voucherCardService;
 
-        public ClientCallController(IVoucherCardService voucherCardService)
+        public ClientCallController(IVoucherCardService voucherCardService) =>
+        _voucherCardService = voucherCardService;
+        
+        [HttpGet]
+        public IActionResult GetVoucherCardBalance([FromQuery]ClientCallRequest clientCallRequest)
         {
-            _voucherCardService = voucherCardService;
-        }
-        [HttpPost]
-        public IActionResult GetVoucherCardBalance([FromBody]ClientCallRequest clientCallRequest)
-        {
-            var response = _voucherCardService.GetBalance(clientCallRequest);
+            _voucherCardService.GetBalance(clientCallRequest);
+
+            _voucherCardService.GetBalance(clientCallRequest);
 
             if (response.ErrorId != 0)
                 return BadRequest(response);

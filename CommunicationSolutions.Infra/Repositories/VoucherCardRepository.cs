@@ -38,7 +38,7 @@ namespace CommunicationSolutions.Infra.Repositories
                     else
                     {
                         response.ErrorId = 500;
-                        response.Message = "CardId não encontrado.";
+                        response.Message = "Cartão não encontrado.";
                     }
 
                 }
